@@ -21,20 +21,21 @@
       <!-- マーカーの.pattファイルを読み込む -->
       <a-marker type="pattern" url="pattern-QR_742533.patt">
         <!-- 3Dモデルを呼び出す -->
-      <a-entity gltf-model="#roadSign"></a-entity>
-        <a-obj-model
-          src="#roadSign"
-          scale="0.5 0.5 0.5"
-          position="0 0.5 0">
-          <a-animation
-            attribute="rotation"
-            to="0 360 0"
-            dur="3000"
-            easing="linear"
-            repeat="indefinite">
-          </a-animation>
-        </a-obj-model>
-      </a-marker>
+        <a-entity gltf-model="#roadSign">
+          <a-obj-model
+            src="#roadSign"
+            scale="0.5 0.5 0.5"
+            position="0 0.5 0">
+            <a-animation
+              attribute="rotation"
+              to="0 360 0"
+              dur="3000"
+              easing="linear"
+              repeat="indefinite">
+            </a-animation>
+          </a-obj-model>
+      </a-entity>
+    </a-marker>
 
       <!-- カメラを追加 -->
       <a-entity camera></a-entity>
